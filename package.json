@@ -6,6 +6,9 @@
   "scripts": {
     "start": "node index.js"
   },
+  "engines": {
+    "node": ">=6.x.x"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/iamso/strapboot-web.git"
