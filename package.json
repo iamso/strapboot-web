@@ -1,0 +1,29 @@
+{
+  "name": "strapboot-web",
+  "version": "0.1.0",
+  "description": "web version of strapboot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/iamso/strapboot-web.git"
+  },
+  "author": "Steve Ottoz <so@dev.so>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iamso/strapboot-web/issues"
+  },
+  "homepage": "https://github.com/iamso/strapboot-web#readme",
+  "dependencies": {
+    "adm-zip": "^0.4.7",
+    "body-parser": "^1.15.2",
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "fs-extra": "^0.30.0",
+    "node-uuid": "^1.4.7",
+    "rimraf": "^2.5.4",
+    "strapboot": "0.*"
+  }
+}
