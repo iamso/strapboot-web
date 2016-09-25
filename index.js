@@ -36,7 +36,7 @@
     strapboot(answers, dir).then(() => {
       files.addLocalFolder(dir);
       files = files.toBuffer();
-      res.setHeader('Content-disposition', 'attachment; filename=strapboot.zip');
+      res.setHeader('Content-disposition', `attachment; filename=${answers.name}.zip`);
       res.setHeader('Content-type', 'application/zip');
       res.send(files);
       rimraf.sync(dir);
