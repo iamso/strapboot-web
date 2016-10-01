@@ -3,6 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Strapboot Web</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+
+  <link rel="apple-touch-icon" href="/apple-touch-icon-precomposed.png">
+  <meta name="msapplication-TileImage" content="/apple-touch-icon-precomposed.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" sizes="192x192" href="/apple-touch-icon-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.ico">
   <style>
     *,
     *:before,
@@ -78,7 +88,7 @@
 
     label:not(.input),
     .label {
-      font-weight: 700;      
+      font-weight: 700;
       margin-right: 1em;
       text-transform: capitalize;
     }
@@ -203,62 +213,62 @@
         <label for="homepage">homepage</label>
         <input type="text" name="homepage" id="homepage" placeholder="homepage" required>
       </li>
-    
+
       <li id="local" class="form-row form-input">
         <label for="local">local</label>
         <input type="text" name="local" id="local" placeholder="local" required>
       </li>
-    
+
       <li id="description" class="form-row form-input">
         <label for="description">description</label>
         <input type="text" name="description" id="description" placeholder="description" required>
       </li>
-    
+
       <li id="version" class="form-row form-input">
         <label for="version">version</label>
         <input type="text" name="version" id="version" placeholder="version" required>
       </li>
-    
+
       <li id="author" class="form-row form-input">
         <label for="author">author</label>
         <input type="text" name="author" id="author" placeholder="author" required>
       </li>
-    
+
       <li id="copyright" class="form-row form-input">
         <label for="copyright">copyright</label>
         <input type="text" name="copyright" id="copyright" placeholder="copyright" required>
       </li>
-    
+
       <li id="repository" class="form-row form-input">
         <label for="repository">repository</label>
         <input type="text" name="repository" id="repository" placeholder="repository" required>
       </li>
-    
+
       <li id="taskrunner" class="form-row select-taskrunner">
         <span class="label">taskrunner</span>
         <label class="input"><input type="radio" name="taskrunner" value="gulp" checked required><span class="radio"></span> gulp</label>
         <label class="input"><input type="radio" name="taskrunner" value="grunt" required><span class="radio"></span> grunt</label>
       </li>
-   
+
       <li id="styles" class="form-row select-styles">
         <span class="label">styles</span>
         <label class="input"><input type="radio" name="styles" value="css" checked required><span class="radio"></span> css</label>
         <label class="input"><input type="radio" name="styles" value="scss" required><span class="radio"></span> scss</label>
       </li>
-    
+
       <li id="scripts" class="form-row select-scripts">
         <span class="label">scripts</span>
         <label class="input"><input type="radio" name="scripts" value="webpack" checked required><span class="radio"></span> webpack</label>
         <label class="input"><input type="radio" name="scripts" value="concat" required><span class="radio"></span> concat</label>
       </li>
-    
+
     </ol>
     <button type="submit">download</button>
   </form>
 
   <script src="/js/u.min.js"></script>
   <script>
-  
+
     (function($) {
       'use strict';
 
